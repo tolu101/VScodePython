@@ -90,14 +90,14 @@ def hangman():
     guesses_left = 6
     guessed_letters = []
  
-    print("Welcome to Hangman!")
+    print("Welcome to The Hangman!")
     display_progress(progress, guesses_left)
  
     while guesses_left > 0:
-        guess = input("Guess a letter: ").lower()
+        guess = input("Guess a letter : ").lower()
  
         if len(guess) != 1 or not guess.isalpha():
-            print("Invalid guess. Please enter a single letter.")
+            print("Invalid guess. Damn Please enter a single letter.")
             continue
  
         if guess in guessed_letters:
@@ -123,6 +123,6 @@ def hangman():
  
  
 hangman()
- 
+ # comment
  
  
